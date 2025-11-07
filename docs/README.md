@@ -80,4 +80,4 @@ GFW醒来。
 
 听完不笑说明你有抑郁症：
 
-{% file src=".gitbook/assets/兰枝2.m4a" %}
+[兰枝2](_media/兰枝2.m4a ':include :type=audio' )
