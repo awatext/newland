@@ -6,15 +6,42 @@
   <meta charset="UTF-8">
   <title>AwAText</title>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+
+  <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
       loadSidebar: true,
-      subMaxLevel: 2
+      subMaxLevel: 2,
+      search: 'auto', // 默认值
+      ga: 'G-VKMD3Z3LZF',
+      plugins: [
+        EditOnGithubPlugin.create('https://github.com/awatext/newland/tree/main/docs/')
+      ]
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: 'Ov23lippzEnxtuyPN4o0',
+      clientSecret: '21319916a088b25237aa582559d7e7edd85e808d',
+      repo: 'newland',
+      owner: 'awatext',
+      admin: ['geGDVS', 'Kroos372'],
+      // facebook-like distraction free mode
+      distractionFreeMode: false
+    })
+  </script>
 </body>
 </html>
